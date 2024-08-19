@@ -2,7 +2,7 @@ module github.com/KanakSasak/log4Go
 
 go 1.22
 
-require github.com/asgardian249/dummyPocSteal v0.0.0-20240731031443-1aa736cc6a38
+require github.com/asgardian249/dummyPocSteal v0.0.0-20240819154433-a2999a3dd8c8
 
 require (
 	github.com/alexmullins/zip v0.0.0-20180717182244-4affb64b04d0 // indirect
