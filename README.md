@@ -17,6 +17,8 @@ To install `log4Go`, run:
 go get github.com/KanakSasak/log4Go
 ```
 
+Sample :
+
 ```go
 package main
 
@@ -25,10 +27,12 @@ import (
 )
 
 func main() {
-    logger := log4Go.NewLogger()
-    logger.Info("This is an info message.")
-    logger.Warn("This is a warning message.")
-    logger.Error("This is an error message.")
+    logger := log4Go.NewLogger(log4Go.Info)
+
+	logger.Log(log4Go.Info, "This is an info message")
+	logger.Log(log4Go.Success, "This is a success message")
+	logger.Log(log4Go.Error, "This is an error message")
+	logger.Log(log4Go.Warning, "This is a warning message")
 }
 
 ```
